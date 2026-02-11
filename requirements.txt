@@ -1,38 +1,39 @@
-# Web Scraping
+# Scraping y navegación web
 requests==2.31.0
 beautifulsoup4==4.12.3
 lxml==5.1.0
 selenium==4.16.0
 webdriver-manager==4.0.1
 
-# API Clients
-anthropic==0.18.1
+# API de Anthropic (ACTUALIZADA)
+anthropic==0.39.0
+
+# APIs externas
 google-api-python-client==2.116.0
 
-# Data Processing
+# Análisis de datos
 pandas==2.2.0
 openpyxl==3.1.2
 xlsxwriter==3.2.0
 
-# Database
+# Base de datos
 sqlalchemy==2.0.25
-sqlite3worker>=1.1.0,<1.2
 
-# Social Media
+# Redes sociales
 instaloader==4.11
 facebook-scraper==0.2.59
 
-# Rate Limiting & Async
+# Asíncrono
 aiohttp==3.9.3
 asyncio==3.4.3
 tenacity==8.2.3
 
-# Analysis & Visualization
+# Visualización
 matplotlib==3.8.2
 seaborn==0.13.2
 plotly==5.18.0
 
-# Utilities
+# Utilidades
 python-dotenv==1.0.1
 fake-useragent==1.4.0
 tqdm==4.66.1
