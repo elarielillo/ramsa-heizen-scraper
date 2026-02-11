@@ -378,7 +378,16 @@ def main():
     """)
     
     # Preguntar si usar IA
-    use_ai = input("\n¿Usar enriquecimiento con IA? (s/n) [s]: ").lower()
+    import os
+
+    def env_bool(name: str, default: bool = True) -> bool:
+        v = os.getenv(name)
+        if v is None:
+            return default
+        return v.strip().lower() in ("1", "true", "t", "yes", "y", "s", "si")
+    
+    use_ai = env_bool("USE_AI", True)
+
     use_ai = use_ai != 'n'
     
     if use_ai:
